@@ -133,10 +133,10 @@ section#project {
 .card {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    width: 100%;
     border-radius: 5px;
     overflow: hidden;
-    transition:  0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 .card:hover{
     transform: scale(1.05);
@@ -232,13 +232,37 @@ footer {
         font-size: 7px;
         
     }
+    .hero-content span{
+        font-size: 30px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    #project h2{
+        font-size: 40px;
+    }
+    nav li{
+        font-size: 10px;
+    }
+    .hero-content h2{
+        font-size: 15px !important;
+    }
+    .hero-content h1{
+        font-size: 14px;
+    }
+    .img-fluid{
+        width: 100%;
+    }
+    .project-container{
+        display: block;
+    }
     #hero .container {
         display:block;
     }
     .hero-image {
         display: block;
         place-items: center;
-        padding: 0 auto;
+        width: 100%;
     
     }
     .top-contact {
@@ -256,6 +280,9 @@ footer {
 @media (max-width:430px) {
     html{
         font-size: 5px;
+    }
+    .img-fluid{
+        width: 100%;
     }
     #hero .container{
         flex-direction: column;
